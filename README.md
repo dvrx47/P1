@@ -1,7 +1,5 @@
 Pracownia P1 z przedmiotu Systemy Operacyjne 2016/17: Klasyczny problem synchronizacji procesów
 
-Problem palaczy tytoniu:
+Problem nagrania utworów (bazujący na klasycznym problemie palaczy tytoniu):
 
-Rozważmy system z trzema procesami palaczy i jednym procesem lokaja. Każdy z palaczy, działając w nieskończonej pętli, wypala własnoręcznie przygotowane skręty.Aby jednak to zrobić potrzebuje trzech rzeczy: tytoniu, papieru i zapałek. Lokaj posiada nieograniczony zapas każdej z tych rzeczy, jeden z palaczy posiada nieograniczony zapas tytoniu, drugi - papieru, a trzeci - zapałek. Niepalący lokaj wybiera losowo dwa spośród trzech składników i kładzie je na stole. Następnie palacz posiadający brakujący składnik, tworzy skręta i wypala go, po czym lokaj ponownie kładzie na stole dwa losowe składniki i cykl się powtarza.
-
-Zadanie polega na skoordynowaniu procesów palaczy i lokaja. 
+Mamy dwa studia nagraniowe (bufory), których właściciel zaprosił do współpracy zespoły 4-osobowe składające się z: wokalisty, basisty, perkusisty i gitarzysty. Ze względu na zamożność właściciela, zespołów zgłosiło się nieskończenie wiele. W lokalnym konkursie muzycznym szansę na nagranie utworu z prawdziwymi zespołami zdobyło 6 parami różnych muzyków (procesów), tj. gitarzysta z basistą, gitarzysta z wokalistą, gitarzysta z perkusistą, perkusista z wokalistą, perkusista z basistą oraz wokalista z basistą. Aby jednak nagrać utwór potrzebują pełnego składu zespołu. Właściciel wybiera losowo dwóch członków jednego zespołu i przydziela ich do pierwszego studia oraz dwóch członków innego zespołu (jednak nie pełniących identycznych funkcji jak para ze studia obok) i przydziela ich do drugiego studia. Pary, którym brakuje członków przydzielonych do któregoś ze studia, wchodzą do odpowiedniego z nich i po nagraniu utworu zgłaszają to właścicielowi. Ten dobiera wtedy losowo 2 osoby z kolejnego zespołu (inne funkcjami niż ze studia obok) i proces powtarza się w nieskończoność.
